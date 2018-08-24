@@ -12,7 +12,7 @@ int main()
 
     for(i=0;i<10;i++)
     {
-        printf("Ingrese un numero sdsdsdsd:");
+        printf("Ingrese un numero aqui:");
         scanf("%d",&numero);
 
         if(i==0)
