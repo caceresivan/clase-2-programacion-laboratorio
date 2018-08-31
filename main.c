@@ -1,38 +1,14 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio_ext.h>
+#include "utn.h"
 
 int main()
 {
-    int numero;
-    int i;
-    int numeroMaximo;
-    int numeroMinimo;
-    int acumulador=0;
-    float promedio;
-
-    for(i=0;i<10;i++)
+    int edad;
+    if(utn_getEntero(&edad,4,"Ingrese edad.","Error ingrese una edad entre 0 y 199",199,0)==0)
     {
-        printf("Ingrese un numero aqui:");
-        scanf("%d",&numero);
-
-        if(i==0)
-        {
-            numeroMaximo=numero;
-            numeroMinimo=numero;
-        }
-        if(numero>numeroMaximo)
-        {
-            numeroMaximo=numero;
-        }
-        if(numero<numeroMinimo)
-        {
-            numeroMinimo=numero;
-        }
-        acumulador=acumulador+numero;
+        printf("La edad es: %d",edad);
     }
-    promedio=(float)acumulador/i;
-    printf("El numero maximo es: %d\n",numeroMaximo);
-    printf("El numero minimo es: %d\n",numeroMinimo);
-    printf("El promedio es: %.1f",promedio);
+
     return 0;
 }
