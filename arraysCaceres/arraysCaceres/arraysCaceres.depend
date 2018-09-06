@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1536194081 source:/home/alumno/Escritorio/caceresivan/arraysCaceres/arraysCaceres/utn.c
+	<stdlib.h>
+	<stdio_ext.h>
+	"utn.h"
+
+1536190253 /home/alumno/Escritorio/caceresivan/arraysCaceres/arraysCaceres/utn.h
+
+1536194022 source:/home/alumno/Escritorio/caceresivan/arraysCaceres/arraysCaceres/main.c
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+

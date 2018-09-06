@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1535677728 source:/home/alumno/Documentos/caceresProyecto/utn.c
+	<stdlib.h>
+	<stdio_ext.h>
+	"utn.h"
+
+1535677116 source:/home/alumno/Documentos/caceresProyecto/main.c
+	<stdlib.h>
+	<stdio_ext.h>
+	"utn.h"
+
+1535673832 /home/alumno/Documentos/caceresProyecto/utn.h
+
