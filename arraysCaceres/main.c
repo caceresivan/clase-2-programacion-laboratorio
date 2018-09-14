@@ -6,9 +6,39 @@
 
 int mostrarArray(int* pArray,int limite);
 
+//typedef int Persona;
+
+/*struct S_Persona
+{
+    char nombre[70];
+    int edad;
+    char dni[20];
+    float altura;
+}
+typedef struct S_Persona Persona;
+*/
+void altaPersona(Persona* pP)
+{
+
+}
+
 int main()
 {
-    int edades[CANTIDAD_EMPLEADOS];
+
+    Persona p;
+    p.edad= 33;
+    p.altura= 1.90;
+
+    fgets(p.nombre,70,stdin);
+    //strncpy(p.nombre,"juan",70);
+
+
+    PrintPersona(&p);
+
+
+    return 0;
+
+  /*  int edades[CANTIDAD_EMPLEADOS];
     int i;
     for(i=0; i<CANTIDAD_EMPLEADOS; i++)
     {
@@ -22,9 +52,24 @@ int main()
     printf("\n");
 
     mostrarArray(edades,CANTIDAD_EMPLEADOS);
-    return 0;
+    return 0;*/
+
+    /*int edades[4];
+    int i;
+    int edadIngresada;
+    for(i=0;i<edades[i];i++)
+    {
+       if()
+       {
+
+       }
+        printf("Ingrese una edad.");
+
+    }
+    printf("%d",edades[i]);
+    return 0;*/
 }
-int calcularMaximo(int* pArray,int limite,int* maximo)
+/*int calcularMaximo(int* pArray,int limite,int* maximo)
 {
     int i;
     int numMaximo;
@@ -38,4 +83,5 @@ int calcularMaximo(int* pArray,int limite,int* maximo)
         }
     }
     return retorno;
-}
+}*/
+

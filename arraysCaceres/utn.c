@@ -102,8 +102,8 @@ int ordenarArray(int* pArray,int limite,int flagMayorMenor)
             flagNoTermineOrdenar=0;
             for(i=0; i<(limite -1); i++)
             {
-                if((flagNoTermineOrdenar==0 && (pArray[i]>pArray[i+1])
-                    (flagNoTermineOrdenar==1 && (pArray[i]<pArray[i+1]))
+                if((flagNoTermineOrdenar==0 && (pArray[i]>pArray[i+1])) ||
+                    (flagNoTermineOrdenar==1 && (pArray[i]<pArray[i+1])))
                 {
                     aux=pArray[i];
                     pArray[i]=pArray[i+1];
@@ -114,5 +114,28 @@ int ordenarArray(int* pArray,int limite,int flagMayorMenor)
             return 0;
         }
         return 0;
+}
+void insertion(int data[],int len)
+{
+    int i,j;
+    int temp;
+
+    for(i=1;i<len;i++)
+    {
+        temp=data[i];
+        j=i-1;
+        while(j>=0 && temp< data[j])
+        {
+            data[j+1]=data[j];
+            i--;
+        }
+        data[j+1]=temp;
+    }
+}
+void PrintPersona(Persona* p)
+{
+    printf("%.2f %d %s \n",p->altura,p->edad,p->nombre);
+
+    //p->edad=99;
 }
 
