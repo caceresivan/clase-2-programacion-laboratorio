@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1539819116 source:/home/alumno/Escritorio/caceresivan/clase-2-programacion-laboratorio-master/clase 17/empleado.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"empleado.h"
+
+1539819180 /home/alumno/Escritorio/caceresivan/clase-2-programacion-laboratorio-master/clase 17/empleado.h
+
+1539819323 source:/home/alumno/Escritorio/caceresivan/clase-2-programacion-laboratorio-master/clase 17/main.c
+	<stdio.h>
+	<stdlib.h>
+	"empleado.h"
+
