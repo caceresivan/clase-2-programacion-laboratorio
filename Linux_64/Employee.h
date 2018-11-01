@@ -8,7 +8,7 @@ typedef struct
     int sueldo;
 }Employee;
 
-Employee* employee_new();
+Employee* Employee_new();
 Employee* employee_newParametros(char* idStr,char* nombreStr,char* horasTrabajadasStr,char* sueldo);
 void employee_delete();
 

@@ -16,7 +16,7 @@ int controller_loadFromText(char* path , LinkedList* pArrayListEmployee)
 {
     FILE *pArchivo;
 
-    pArchivo=fopen("data.csv","r");
+    pArchivo=fopen(path,"r");
 
     parser_EmployeeFromText(pArchivo,pArrayListEmployee);
     fclose(pArchivo);
@@ -33,7 +33,12 @@ int controller_loadFromText(char* path , LinkedList* pArrayListEmployee)
  */
 int controller_loadFromBinary(char* path , LinkedList* pArrayListEmployee)
 {
-    return 1;
+    int retorno=-1;
+    FILE *pArchivo;
+    pArchivo=fopen(path,"r");
+    parser_EmployeeFromBinary(pArchivo,pArrayListEmployee);
+    fclose(pArchivo);
+    return retorno;
 }
 
 /** \brief Alta de empleados
@@ -45,6 +50,18 @@ int controller_loadFromBinary(char* path , LinkedList* pArrayListEmployee)
  */
 int controller_addEmployee(LinkedList* pArrayListEmployee)
 {
+    Employee *pEmployee;
+    char* auxId;
+
+    if(utn_getLetras(auxId,"Ingrese id: ","Error",0,1000,3))
+       {
+            pEmployee=employee_newParametros(auxId,);
+       }
+       if(pEmployee!=NULL)
+       {
+            ll_add(pArrayListEmployee,pEmployee);
+       }
+
     return 1;
 }
 
@@ -117,6 +134,20 @@ int controller_saveAsText(char* path , LinkedList* pArrayListEmployee)
  */
 int controller_saveAsBinary(char* path , LinkedList* pArrayListEmployee)
 {
+    FILE *pArchivo=fopen(path,"wb");
+    Employee* pEmpleado;
+    int i;
+    int lenArray = ll_len(pArrayListEmployee);
+    if(pArchivo != NULL)
+    {
+        for(i=0;i<lenArray;i++)
+        {
+            pEmpleado=ll_get(pArrayListEmployee,i);
+            fwrite(pEmpleado,sizeof(Employee),1,pArchivo);
+        }
+    }
+    fclose(pArchivo);
+
     return 1;
 }
 

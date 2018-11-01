@@ -53,3 +53,46 @@
 	"LinkedList.h"
 	"Employee.h"
 
+1540960816 source:/home/alumno/Escritorio/CaceresIvan/clase-2-programacion-laboratorio-master/Linux_64/biblioteca.c
+	<stdio_ext.h>
+	<stdlib.h>
+	"biblioteca.h"
+	<string.h>
+
+1540960816 /home/alumno/Escritorio/CaceresIvan/clase-2-programacion-laboratorio-master/Linux_64/biblioteca.h
+
+1541029270 source:/home/alumno/Escritorio/CaceresIvan/clase-2-programacion-laboratorio-master/Linux_64/Controller.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+	"parser.h"
+
+1540516617 /home/alumno/Escritorio/CaceresIvan/clase-2-programacion-laboratorio-master/Linux_64/LinkedList.h
+
+1541029561 /home/alumno/Escritorio/CaceresIvan/clase-2-programacion-laboratorio-master/Linux_64/Employee.h
+
+1540516617 /home/alumno/Escritorio/CaceresIvan/clase-2-programacion-laboratorio-master/Linux_64/parser.h
+
+1541029563 source:/home/alumno/Escritorio/CaceresIvan/clase-2-programacion-laboratorio-master/Linux_64/Employee.c
+	"Employee.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1541025065 source:/home/alumno/Escritorio/CaceresIvan/clase-2-programacion-laboratorio-master/Linux_64/main.c
+	<stdio_ext.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+	"biblioteca.h"
+
+1540516617 /home/alumno/Escritorio/CaceresIvan/clase-2-programacion-laboratorio-master/Linux_64/Controller.h
+
+1541029508 source:/home/alumno/Escritorio/CaceresIvan/clase-2-programacion-laboratorio-master/Linux_64/parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+

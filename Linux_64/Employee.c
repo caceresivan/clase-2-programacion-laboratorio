@@ -1,8 +1,10 @@
-
-#include "Employee.h"
-#include <stdio.h>
+#include <stdio_ext.h>
 #include <stdlib.h>
 #include <string.h>
+#include "Employee.h"
+#include "biblioteca.h"
+#define FALSE 0
+#define TRUE 1
 
 Employee* Employee_new()
 {
@@ -21,7 +23,8 @@ Employee* employee_newParametros(char* id,char* nombre,char* horasTrabajadas,cha
     Employee* this;
     this=Employee_new();
 
-    if(
+    if(isValidNombre(nombre) &&
+    isValidId(id) &&
     !employee_setId(this,atoi(id))&&
     !employee_setNombre(this,nombre)&&
     !employee_setHorasTrabajadas(this,atoi(horasTrabajadas))&&
@@ -129,3 +132,13 @@ int employee_getSueldo(Employee* this,int* sueldo)
     return retorno;
 }
 
+int isValidId(char* id)
+{
+    int retorno=FALSE;
+    if(id!=NULL)
+    {
+        isInt(id);
+        retorno=TRUE;
+    }
+    return retorno;
+}
